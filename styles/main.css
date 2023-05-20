@@ -3,44 +3,75 @@ body {
 font-family: Arial, Helvetica, sans-serif;
 background-color: lightblue;
 }
+/*Banner content*/
+.banner {
+  padding: 60px;
+  text-align: center;
+  background-image:
+  url(https://cdn.shopify.com/s/files/1/2675/8584/files/60FECA76-49C0-4167-9A60-D41741CA142D_1296x.jpg?v=1659176836);
+  color: white;
+  font-size: 30px;
+}
 
-
-/* Style the tab */
-.tab {
+h2 {
+  text-align: center;
+}
+h5 {
+  text-align: center;
+  color: rgb(239, 245, 241);
+}
+/*Nav styling*/
+.nav {
+  background-color: #f190e2;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #FFC0CB;
-  float: center; 
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 15px 20px 15px;
+}
+/*Intro block */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+/*Column content*/
+* {
+  box-sizing: border-box;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+.row {
+  display: flex;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #00FF00;
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Remove */
+}
+</style>
+</head>
+<body>
+.list {
+ background-color: yellow;
+ padding: 25px 30px
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #a560fa;
+.button {
+    background-color: #f6ff4a;
+    border: none;
+    color: rgb(7, 23, 250);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
 }
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  float: center;
-}
 </style>
