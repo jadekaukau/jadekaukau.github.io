@@ -10,6 +10,7 @@ font-family: Arial, Helvetica, sans-serif;
   url(https://cdn.shopify.com/s/files/1/2675/8584/files/60FECA76-49C0-4167-9A60-D41741CA142D_1296x.jpg?v=1659176836);
   color: white;
   font-size: 30px;
+  border-radius: 40px;
 }
 
 h2 {
@@ -26,6 +27,7 @@ h5 {
   display: flex;
   justify-content: space-around;
   margin: 20px 15px 20px 15px;
+  border-radius: 40px;
 }
 /*Intro block */
 .content {
@@ -34,7 +36,7 @@ h5 {
     justify-content: center
   }
   
-  img {
+  #profile-pic {
     max-width: 500px;
     max-height: 500px;
     margin: 20px 15px 20px 15px;
@@ -42,10 +44,15 @@ h5 {
     border-radius: 50px;
 
   }
-  
+
   .text {
     font-size: 20px;
     padding-left: 20px;
+    margin: 20px 15px 20px 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    max-width: 500px;
+    align-content: center;
   }
 
 
@@ -54,69 +61,12 @@ h5 {
   box-sizing: border-box;
 }
 
-.row {
-  display: flex;
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #a8e8ff;
 }
-
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-</style>
-</head>
-<body>
-.list {
- background-color: yellow;
- padding: 25px 30px
-} 
-
-.content-block {
-  background-color: lightpink;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.content-block-2 {
-  background-color: rgb(146, 54, 68);
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-card-profile,
-    .card-testimonial {
-        margin-top: 30px;        
-    }
-    .card {
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        margin-bottom: 30px;
-        border-radius: 6px;
-        color: rgba(0,0,0, 0.87);
-        background: #fff;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-        display: flex;
-    }
-    .img-rounded {
-        border-radius: 6px;
-    }
-    .img-responsive {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-	.center-text{
-		text-align: center;    
-	}
-  .middle-center{
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-  }
-
-.fcc-btn {
+.btn {
   background-color: #fcbbff;
   color: white;
   padding: 15px 25px;
@@ -125,7 +75,7 @@ card-profile,
   font-size: 12px;
 }
 
-.fcc-btn:hover {
+.btn:hover {
   background-color: #fe63e7;
 }
 
@@ -133,7 +83,6 @@ card-profile,
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
   margin-top: 20px;
 
 </style>
