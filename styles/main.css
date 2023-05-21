@@ -1,7 +1,6 @@
 <style>
 body {
 font-family: Arial, Helvetica, sans-serif;
-background-color: lightblue;
 }
 /*Banner content*/
 .banner {
@@ -30,9 +29,7 @@ h5 {
 }
 /*Intro block */
 .content {padding:20px;}
-</style>
-</head>
-<body>
+
 
 /*Column content*/
 * {
@@ -46,7 +43,6 @@ h5 {
 .column {
   flex: 50%;
   padding: 10px;
-  height: 300px; /* Remove */
 }
 </style>
 </head>
@@ -54,19 +50,67 @@ h5 {
 .list {
  background-color: yellow;
  padding: 25px 30px
+} 
+
+.content-block {
+  background-color: lightpink;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.button {
-    background-color: #f6ff4a;
-    border: none;
-    color: rgb(7, 23, 250);
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+.content-block-2 {
+  background-color: rgb(146, 54, 68);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+card-profile,
+    .card-testimonial {
+        margin-top: 30px;        
+    }
+    .card {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        color: rgba(0,0,0, 0.87);
+        background: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        display: flex;
+    }
+    .img-rounded {
+        border-radius: 6px;
+    }
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+	.center-text{
+		text-align: center;    
+	}
+  .middle-center{
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+
+.fcc-btn {
+  background-color: #fcbbff;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.fcc-btn:hover {
+  background-color: #fe63e7;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
