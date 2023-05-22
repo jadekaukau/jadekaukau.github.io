@@ -1,13 +1,12 @@
-<style>
 body {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Banner content*/
 .banner {
   padding: 60px;
   text-align: center;
-  background-image:
-  url(https://cdn.shopify.com/s/files/1/2675/8584/files/60FECA76-49C0-4167-9A60-D41741CA142D_1296x.jpg?v=1659176836);
+  background-image: url(https://cdn.shopify.com/s/files/1/2675/8584/files/60FECA76-49C0-4167-9A60-D41741CA142D_1296x.jpg?v=1659176836);
   color: white;
   font-size: 30px;
   border-radius: 40px;
@@ -20,41 +19,61 @@ h5 {
   text-align: center;
   color: rgb(239, 245, 241);
 }
-/*Nav styling*/
+
+/* Nav styling */
 .nav {
   background-color: #f190e2;
   overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 15px 20px 15px;
+  text-align: center; /* Center the nav links */
+  margin: 20px 15px;
   border-radius: 40px;
 }
+
+.nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block; /* Display list items inline */
+}
+
+.nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover {
+  background-color: #fe63e7;
+}
+
 /*Intro block */
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  
-  #profile-pic {
-    max-width: 500px;
-    max-height: 500px;
-    margin: 20px 15px 20px 15px;
-    padding:20px 15px 20px 15px;
-    border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
+#profile-pic {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 20px 15px 20px 15px;
+  padding: 20px 15px 20px 15px;
+  border-radius: 50px;
+}
 
-  .text {
-    font-size: 20px;
-    padding-left: 20px;
-    margin: 20px 15px 20px 15px;
-    text-align: center;
-    letter-spacing: 2px;
-    max-width: 500px;
-    align-content: center;
-  }
-
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+  margin: 20px 15px 20px 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  max-width: 500px;
+  align-content: center;
+}
 
 /*Column content*/
 * {
@@ -66,6 +85,7 @@ body {
   padding: 20px;
   background: #a8e8ff;
 }
+
 .btn {
   background-color: #fcbbff;
   color: white;
@@ -93,10 +113,9 @@ body {
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: center;
   width: 80%;
-
 }
 
 /* Fake image */
@@ -108,14 +127,14 @@ body {
 
 /* Add a card effect for articles */
 .card {
-   background-color: #a33648;
-   padding: 20px;
-   margin-top: 20px;
+  background-color: #a33648;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -125,11 +144,4 @@ body {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
-
-</style>
+}
