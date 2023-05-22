@@ -49,12 +49,13 @@ h5 {
 .nav a:hover {
   background-color: #fe63e7;
 }
-
 /*Intro block */
 .content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap; /* Allow content to wrap onto a new line */
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start; /* Align content to the top */
+  margin: 0 -10px; /* Add negative margin to counteract column spacing */
 }
 
 #profile-pic {
@@ -66,13 +67,19 @@ h5 {
 }
 
 .text {
-  font-size: 20px;
-  padding-left: 20px;
-  margin: 20px 15px 20px 15px;
+  flex: 1 0 50%; /* Take up 50% of the width in larger screens */
+  padding: 0 10px; /* Add left and right padding */
+  margin: 20px 0; /* Adjust top and bottom margin */
   text-align: center;
   letter-spacing: 2px;
-  max-width: 500px;
-  align-content: center;
+  max-width: 100%; /* Allow content to occupy full width */
+}
+
+/* Adjust for screens 800px or smaller */
+@media (max-width: 800px) {
+  .text {
+    flex: 1 0 100%; /* Take up 100% of the width in smaller screens */
+  }
 }
 
 /*Column content*/
