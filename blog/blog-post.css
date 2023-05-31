@@ -1,0 +1,136 @@
+body {
+  background-color: lightpink;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  background-color: darkpink;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+h1::after {
+  content: "";
+  background-image: url("sparkle.gif"); /* Replace with the URL of your sparkle image */
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+h2, p {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.content {
+  width: 80%;
+  margin-right: 20px;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.box {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+.oval-background {
+  display: inline-block;
+  background-color: #35ff31; /* Background color */
+  border-radius: 50px; /* Adjust the value to control the oval shape */
+  padding: 5px 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sparkle-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #010242;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: sparkleAnim 1s linear forwards;
+}
+
+@keyframes sparkleAnim {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

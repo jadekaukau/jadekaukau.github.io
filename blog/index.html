@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>KAUKAUBEAN</title>
+<title>@KAUKAUBEAN</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <!-- Navbar -->
+  <div class="nav">
+    <ul><a href="/index.html">Home</a></ul> 
+    <ul><a href="technical-blog.html" target="_blank">Technical blog</a></ul> 
+    <ul><a href="identity-values.html" target="_blank">Identity & Values</a></ul> 
+    <ul><a href="learning-plan.html" target="_blank">Learning Plan</a></ul> 
+    <ul><a href="te-houtaewa-template.html" target="_blank">Te Houtaewa</a></ul> 
+    <ul><a href="javascript-dom.html" target="_blank">Javascript DOM</a></ul> 
 
-  <h1>Jade Kaukau</h1>
-  <h2>A sub heading</h2>
-  
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#blogs">Blogs</a></li>
-    <li><a href="#reflections">Reflections</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#coolthings">Cool things</a></li>
-  </ul>
-  
-<div>
-<ul>
-<li>Set up a basic HTML page with the appropriate tags (HTML, head, title, etc.)
-<li>Add paragraphs, headings, links, images, lists, and/or tables</li>
-<li>Divide content on a page using divs and spans</li>
-<li>Include a viewport meta tag in your HTML files</li>
-<li>Make your blog responsive so it can be easily used on different screen sizes</li>
-<li>Link an external stylesheet to an HTML document</li>
-<li>Position elements using CSS</li>
-<li>Modify element style (size, color, etc) using CSS</li>
-<li>Use classes and ids to manipulate elements</li>
-</ul>
-</div>
+  </div>
 
+  <div class="banner">
+    <div>
+      <h1>JADE'S BLOG</h1>
+      <h5>Find out your daily horoscope</h5>
+      <a class="btn" href="https://www.hindustantimes.com/astrology/horoscope">Click here</a>
+    </div>  
+  </div>
 
+  <div class="content">
+    <div class="profile-pic">
+      <img id="profile-pic" src="https://nzendo.org.nz/wp-content/uploads/2022/09/Jade.webp">
+    </div>
+    <div class="text">
+      <h1>About me</h1>
+      <p>Ko Huianui te maunga</p>
+      <p>Ko Wairoa matangirau te awa</p> 
+      <p>Ko Takitimu te waka </p>
+      <p>Ko Ngāti Kahungunu ki Wairoa te iwi</p>
+      <p>Ko Te Rauhina te whare tipuna</p>
+      <p>Ko Jade Kaukau toku ingoa</p>
+      
+      <p>I'm an Aquarius, freshly 30 
+        and to celebrate stepping into 'proper' adulthood, I got married in Las Vegas
+        to my lovely wife, Annie. 
+      </p>
+    </div>
+  </div>
+
+  <!-- Sparkle Cursor -->
+  <div class="sparkle-cursor"></div>
+
+  <script>
+    document.addEventListener('mousemove', function(event) {
+      var sparkleCursor = document.querySelector('.sparkle-cursor');
+      var sparkle = document.createElement('span');
+      sparkle.className = 'sparkle';
+      sparkle.style.top = (event.pageY - 5) + 'px';
+      sparkle.style.left = (event.pageX - 5) + 'px';
+      sparkleCursor.appendChild(sparkle);
+
+      setTimeout(function() {
+        sparkle.remove();
+      }, 1000);
+    });
+  </script>
+
+  <!-- Footer 
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
 </body>
-
-<div class="tab">
- <button class="tablinks">BLOG 1</button>
- <button class="tablinks">BLOG 2</button>
- <button class="tablinks">BLOG 3</button>
- <button class="tablinks">BLOG 4</button>
- <button class="tablinks">BLOG 5</button>
-</div>
+</html>
+-->
