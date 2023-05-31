@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="blog-post.css" rel="stylesheet" type="text/css">
+  <title>Blank Template</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!-- Your content goes here -->
+    </div>
+  </div>
+
+  <!-- Sparkle Cursor -->
+  <div class="sparkle-cursor"></div>
+
+  <script>
+    document.addEventListener('mousemove', function(event) {
+      var sparkleCursor = document.querySelector('.sparkle-cursor');
+      var sparkle = document.createElement('span');
+      sparkle.className = 'sparkle';
+      sparkle.style.top = (event.pageY - 5) + 'px';
+      sparkle.style.left = (event.pageX - 5) + 'px';
+      sparkleCursor.appendChild(sparkle);
+
+      setTimeout(function() {
+        sparkle.remove();
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
