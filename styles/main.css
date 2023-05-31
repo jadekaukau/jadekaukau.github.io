@@ -1,25 +1,33 @@
 body {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
-/*Banner content*/
+
 .banner {
   padding: 60px;
   text-align: center;
-  background-image:
-  url(https://cdn.shopify.com/s/files/1/2675/8584/files/60FECA76-49C0-4167-9A60-D41741CA142D_1296x.jpg?v=1659176836);
+  background-image: url(https://cdn.shopify.com/s/files/1/2675/8584/files/60FECA76-49C0-4167-9A60-D41741CA142D_1296x.jpg?v=1659176836);
   color: white;
   font-size: 30px;
   border-radius: 40px;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h2 {
   text-align: center;
 }
+
 h5 {
   text-align: center;
   color: rgb(239, 245, 241);
 }
-/*Nav styling*/
+
 .nav {
   background-color: #f190e2;
   overflow: hidden;
@@ -27,62 +35,39 @@ h5 {
   justify-content: space-around;
   margin: 20px 15px 20px 15px;
   border-radius: 40px;
+  text-align: center;
 }
-/*Intro block */
+
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0 -10px;
-  }
-  
-  #profile-pic {
-    max-width: 500px;
-    max-height: 500px;
-    margin: 20px 15px 20px 15px;
-    padding:20px 15px 20px 15px;
-    border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust the maximum width as per your requirement */
+}
 
-  }
+#profile-pic {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 20px auto;
+  padding: 20px 15px;
+  border-radius: 50px;
+}
 
-  .text {
-    flex:  1 0 50% ;
-    padding: 0 10px;
-    margin: 20px;
-    text-align: center;
-    letter-spacing: 2px;
-    max-width: 100%;
+.text {
+  flex: 1 0 50%;
+  padding: 0 10px;
+  margin: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  max-width: 100%;
+}
 
-  }
-
-  /*Adjust for screens 800px or smaller */
-  @media (max-width: 800px)
+@media (max-width: 800px) {
   .text {
     flex: 1 0 100%;
   }
-
-/*Column content*/
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #a8e8ff;
-}
-.btn {
-  background-color: #fcbbff;
-  color: white;
-  padding: 15px 25px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 12px;
-}
-
-.btn:hover {
-  background-color: #fe63e7;
 }
 
 * {
@@ -97,29 +82,12 @@ body {
   align-items: center;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: center;
   width: 80%;
-
+  margin: 0 auto;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: #a33648;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -139,18 +107,7 @@ body {
   width: 10px;
   height: 10px;
   background-color: #010242;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   animation: sparkleAnim 1s linear forwards;
 }
 
@@ -164,8 +121,90 @@ body {
     transform: scale(0);
   }
 }
-/* Footer */
+
 .footer {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee h1 {
+  display: inline-block;
+  margin: 0;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Center align the container */
+.blogcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px; /* Add margin-top for spacing */
+}
+
+/* Style for each card */
+.blogcard {
+  width: calc(30% - 20px); /* Adjust the width as per your preference */
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+/* Hover effect for card */
+.blogcard:hover {
+  transform: scale(1.05); /* Add transform property */
+}
+
+/* Style for the image */
+.blogcard img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+/* Style for the excerpt */
+.blogcard p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+/* button styling */
+.blogcard a {
+  display: block;
+  margin-top: 10px;
+  padding: 3px 8px; /
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .blogcard {
+    width: calc(33.33% - 20px); /* Adjust the width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .blogcard {
+    width: calc(50% - 20px); /* Adjust the width for even smaller screens */
+  }
+}
