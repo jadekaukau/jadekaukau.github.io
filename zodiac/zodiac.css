@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1853;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.zodiac-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+#horoscope-container {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
